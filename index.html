@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form Validation Assignment</title>
+    <script src="src/js/app.js" defer></script>
+    <link rel="stylesheet" href="src/css/style.css">
+  </head>
+  <body>
+    <section class="container">
+      <form action="#" id="user-registration-form" novalidate>
+        
+        <div class="form-group">
+          <label for="personal-number">Personal Number:</label>
+          <input type="text" id="personal-number" name="personal-number" placeholder="შეიყვანეთ პირადი ნომერი" required>
+          <span class="message"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="შეიყვანეთ ელ.ფოსტა" required>
+          <span class="message"></span>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="შეიყვანეთ პაროლი" required>
+          <span class="message"></span>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <dialog id="dialog-popup" class="modal-content">
+      <span class="close-button" id="close-dialog-btn">&times;</span>
+      <h2>Form Submitted Successfully!</h2>
+      <p>Your form has been submitted.</p>
+    </dialog>    
+  </body>
+</html>
