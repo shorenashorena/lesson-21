@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 380px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+form .form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+form input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+form input:focus {
+  border-color: #5c80ff;
+}
+.message {
+  font-size: 14px;
+  margin-top: 5px;
+  height: 16px;
+}
+.error {
+  border-color: #ff4b4b !important;
+}
+.success {
+  border-color: #2bb872 !important;
+}
+.error-text {
+  color: #ff4b4b;
+}
+.success-text {
+  color: #2bb872;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #5c80ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4666dd;
+}
+.modal-content {
+  padding: 25px;
+  border-radius: 10px;
+  border: none;
+  width: 350px;
+}
+.close-button {
+  cursor: pointer;
+  float: right;
+  font-size: 22px;
+}
